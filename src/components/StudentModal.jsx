@@ -28,7 +28,7 @@ export default function StudentModal({ isOpen, mode, initialValues, onCancel, on
   };
 
   return (
-    <div className="modal-overlay" style={{ display: 'flex' }} onClick={handleOverlayClick}>
+    <div className="modal-overlay" onClick={handleOverlayClick}>
       <div className="modal">
         <h2>{mode === 'update' ? 'Edit Student' : 'Add New Student'}</h2>
         <div className="form-grid">
@@ -59,4 +59,3 @@ export default function StudentModal({ isOpen, mode, initialValues, onCancel, on
     </div>
   );
 }
-
